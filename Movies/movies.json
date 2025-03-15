@@ -1,0 +1,27 @@
+[
+    {
+        "name":         "Dog Eats Pie",
+        "poster":       "../Movies/Posters/Poster.jpg",
+        "trailer":      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "rating":       "PG-14",
+        "length":       "32h 54m",
+        "description":  "Just a doggo who eats a singular pie.",
+        "date":         "Feb 9th",
+        "genre":        "Action | Adventure | Romance",
+
+        "type":         "Now Playing"
+    },
+
+    {
+        "name":         "Toy Story 12",
+        "poster":       "../Movies/Posters/Poster.jpg",
+        "trailer":      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "rating":       "R",
+        "length":       "1h 34m",
+        "description":  "The toys discover that Bo Peep used to be a world class assasin.",
+        "date":         "Mar 7th",
+        "genre":        "Drama | Action | Horror",
+
+        "type":         "Next Attraction"
+    }
+]

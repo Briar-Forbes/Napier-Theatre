@@ -1,0 +1,28 @@
+/* THIS IS A STYLESHEET SPECIFICALLY FOR ELEMENTS ON index.html */
+
+
+/* CASH NOTICE */
+    div.CashOnly
+    {
+        background-image: linear-gradient(#ff3b3b, #d32f2f);
+        color: #ffffff;
+        box-shadow: 0 0 20px #00000070;
+
+        border-radius: 20px;
+        border-width: 20px;
+
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+
+        opacity: 0;
+        animation: basic-fade-in .5s .35s forwards;
+    }
+
+/* BASIC ANIMATIONS */
+
+    @keyframes basic-fade-in
+    {
+        from { opacity: 0; transform: translateY(10px);}
+        to { opacity: 1; transform: translateY(0);}
+    }
