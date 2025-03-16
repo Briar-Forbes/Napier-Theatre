@@ -23,7 +23,7 @@
 
     .Movies div.Poster
     {
-        border-width: 10px;
+        border-width: 20px;
         border-radius: 10px;
         
         width: 356px;
@@ -40,7 +40,7 @@
     .Movies h2
     { color: #ffffff; }
 
-    .Movies div.movie-card
+    .Movies .movie-card li
     { float: right; }
 
     .Movies ul
