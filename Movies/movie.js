@@ -19,14 +19,22 @@ function displayMovies(movies) {
         movieCard.classList.add('movie-card');
 
         movieCard.innerHTML = `
-            <img src="${movie.poster}" alt="${movie.name} Poster">
-            <h2>${movie.name}</h2>
-            <p><strong>Rating:</strong> ${movie.rating}</p>
-            <p><strong>Length:</strong> ${movie.length}</p>
-            <p><strong>Genre:</strong> ${movie.genre}</p>
-            <p><strong>Release Date:</strong> ${movie.date}</p>
-            <p>${movie.description}</p>
-            <a class="trailer-btn" href="${movie.trailer}" target="_blank">🎥 Watch Trailer</a>
+            <ul>
+                <li>
+                    <h3>${movie.type}</h3>
+                    <div class="Poster" style="background-image: ${movie.type}">${movie.date}</div>
+                </li>
+
+                <li>
+                    <p>${movie.genre}</p>
+                    <h2>${movie.name}</h2>
+
+                    <div class="Rating">${movie.rating}</div>
+                    <a>${movie.length}</a>
+                    <p>${movie.description}</p>
+                    
+                    <button class="trailer" href="${movie.trailer}" target="_blank">🎥 Watch Trailer</button>
+                </li>
         `;
 
         container.appendChild(movieCard);
