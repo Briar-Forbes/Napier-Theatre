@@ -22,7 +22,7 @@ function displayMovies(movies) {
             <ul>
                 <li>
                     <h3>${movie.type}</h3>
-                    <div class="Poster" style="background-image: url('${movie.type}')">${movie.date}</div>
+                    <div class="Poster" style="background-image: url('${movie.poster}')">${movie.date}</div>
                 </li>
 
                 <li>
