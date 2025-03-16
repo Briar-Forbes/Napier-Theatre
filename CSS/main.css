@@ -70,6 +70,13 @@
     .navbar .i3 {opacity: 0; animation: basic-fade-in .5s .3s forwards;}
     .navbar .i4 {opacity: 0; animation: basic-fade-in .5s .35s forwards;}
 
+    iframe.navbar
+    {
+        border: none;
+        width: 100vw;
+        height: 150px;
+    }
+
 /* BASIC ANIMATIONS */
 
     @keyframes basic-fade-in
