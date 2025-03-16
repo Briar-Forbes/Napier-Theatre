@@ -34,6 +34,18 @@
         background-repeat: no-repeat;
     }
 
+    .Movies p
+    { color: #3a3a3a; }
+
+    .Movies h2
+    { color: #ffffff; }
+
+    .Movies li
+    { float: right; }
+
+    .Movies ul
+    { list-style-type: none; }
+
 /* BASIC ANIMATIONS */
 
     @keyframes basic-fade-in
