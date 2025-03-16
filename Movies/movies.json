@@ -1,7 +1,7 @@
 [
     {
         "name":         "Dog Eats Pie",
-        "poster":       "../Movies/Posters/Poster.jpg",
+        "poster":       "Movies/Posters/Poster.jpg",
         "trailer":      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         "rating":       "PG-14",
         "length":       "32h 54m",
@@ -14,7 +14,7 @@
 
     {
         "name":         "Toy Story 12",
-        "poster":       "../Movies/Posters/Poster.jpg",
+        "poster":       "Movies/Posters/Poster.jpg",
         "trailer":      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         "rating":       "R",
         "length":       "1h 34m",
