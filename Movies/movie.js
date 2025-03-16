@@ -1,7 +1,7 @@
 // Function to fetch movie data from JSON file
 async function fetchMovies() {
     try {
-        const response = await fetch('../Movies/movies.json'); // Fetch the JSON file
+        const response = await fetch('movies.json'); // Fetch the JSON file
         const movies = await response.json(); // Convert to JavaScript array
         displayMovies(movies); // Call function to display movies
     } catch (error) {
