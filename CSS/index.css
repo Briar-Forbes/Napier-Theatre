@@ -40,7 +40,7 @@
     .Movies h2
     { color: #ffffff; }
 
-    .Movies li
+    .Movies div.movie-card
     { float: right; }
 
     .Movies ul
