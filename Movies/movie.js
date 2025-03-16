@@ -35,6 +35,7 @@ function displayMovies(movies) {
                     
                     <button class="trailer" href="${movie.trailer}">🎥 Watch Trailer</button>
                 </li>
+            </ul>
         `;
 
         container.appendChild(movieCard);
