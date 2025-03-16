@@ -22,7 +22,7 @@ function displayMovies(movies) {
             <ul>
                 <li>
                     <h3>${movie.type}</h3>
-                    <div class="Poster" style="background-image: url('${movie.poster}')">${movie.date}</div>
+                    <div class="Poster" style="background-image: url('${movie.poster}'); background-size: cover;">${movie.date}</div>
                 </li>
 
                 <li>
@@ -33,7 +33,7 @@ function displayMovies(movies) {
                     <a>${movie.length}</a>
                     <p>${movie.description}</p>
                     
-                    <button class="trailer" href="${movie.trailer}" target="_blank">🎥 Watch Trailer</button>
+                    <button class="trailer" href="${movie.trailer}">🎥 Watch Trailer</button>
                 </li>
         `;
 
