@@ -32,11 +32,31 @@
 .movie-card {
     display: flex;
     align-items: center;
-    gap: 15px; /* Reduced gap to bring text closer to the poster */
+    gap: 15px; /* Brings text closer to the poster */
     background: #222;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Movie Section (Type + Poster) */
+.movie-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Type (Positioned ABOVE the poster) */
+.type {
+    position: absolute;
+    top: -30px; /* Moves it above the poster */
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 /* Movie Poster */
@@ -51,19 +71,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-}
-
-/* Type Overlay (Centered Over Poster) */
-.type-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px 15px;
-    font-size: 16px;
-    border-radius: 5px;
 }
 
 /* Date Overlay */
@@ -86,7 +93,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 5px; /* Reducing space between text for compact layout */
+    gap: 5px; /* Reduced space between text for compact layout */
 }
 
 .genre {
