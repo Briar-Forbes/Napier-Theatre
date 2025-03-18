@@ -19,9 +19,11 @@ function displayMovies(movies) {
         movieCard.classList.add('movie-card');
 
         movieCard.innerHTML = `
-            <div class="movie-poster" style="background-image: url('${movie.poster}')">
-                <div class="type-overlay">${movie.type}</div>
-                <div class="date-overlay"><span class="date">${movie.date}</span></div>
+            <div class="movie-section">
+                <div class="type">${movie.type}</div>
+                <div class="movie-poster" style="background-image: url('${movie.poster}')">
+                    <div class="date-overlay"><span class="date">${movie.date}</span></div>
+                </div>
             </div>
 
             <div class="movie-details">
