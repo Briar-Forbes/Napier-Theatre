@@ -21,30 +21,127 @@
 
 /* MOVIES */
 
-    .Movies div.Poster
+    #movies-container
     {
-        border-width: 20px;
-        border-radius: 10px;
-        
-        width: 356px;
-        height: 512px;
-        
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .Movies p
-    { color: #3a3a3a; }
+    .movie-card
+    {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: #222;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    }
 
-    .Movies h2
-    { color: #ffffff; }
+    .movie-details
+    {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
 
-    .Movies .movie-card li
-    { float: right; }
+    .genre
+    {
+        font-size: 14px;
+        color: #bbb;
+    }
 
-    .Movies ul
-    { list-style-type: none; }
+    .title
+    {
+        font-size: 24px;
+        margin: 5px 0;
+    }
+
+    .info
+    {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .rating
+    {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #ffcc00;
+        color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .length
+    {
+        font-size: 14px;
+        color: #ddd;
+    }
+
+    .description
+    {
+        font-size: 14px;
+        color: #ccc;
+        margin-bottom: 10px;
+    }
+
+    .trailer-btn
+    {
+        text-decoration: none;
+        background: #ff3333;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 5px;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .movie-poster
+    {
+        position: relative;
+        width: 200px;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .type
+    {
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 5px 10px;
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .date-overlay
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: left;
+        padding: 5px 10px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    }
+
+    .date
+    {
+        color: white;
+        font-size: 14px;
+    }
 
 /* BASIC ANIMATIONS */
 
