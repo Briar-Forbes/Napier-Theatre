@@ -1,46 +1,48 @@
-// Function to fetch movie data from JSON file
+//GET DATA FROM movies.json
 async function fetchMovies() {
     try {
-        const response = await fetch('Movies/movies.json'); // Fetch the JSON file
-        const movies = await response.json(); // Convert to JavaScript array
-        displayMovies(movies); // Call function to display movies
+        const response = await fetch('Movies/movies.json'); // GET FILE
+        const movies = await response.json(); // CONVERT TO JAVA ARRAY
+        displayMovies(movies); // DISPLAY
     } catch (error) {
-        console.error("Error fetching movies:", error);
+        console.error("JSON MOVIE ERROR: ", error);
     }
 }
 
-// Function to generate movie cards dynamically
+// GENERATE MOVIE CARDS
 function displayMovies(movies) {
     const container = document.getElementById('movies-container');
-    container.innerHTML = ""; // Clear previous movies
+    container.innerHTML = ""; // CLEAR MOVIES
 
     movies.forEach(movie => {
         const movieCard = document.createElement('div');
         movieCard.classList.add('movie-card');
 
         movieCard.innerHTML = `
-            <ul>
-                <li>
-                    <h3>${movie.type}</h3>
-                    <div class="Poster" style="background-image: url('${movie.poster}')">${movie.date}</div>
-                </li>
+            <div class="movie-details">
+                <p class="genre">${movie.genre}</p>
+                <h2 class="title">${movie.name}</h2>
 
-                <li>
-                    <p>${movie.genre}</p>
-                    <h2>${movie.name}</h2>
+                <div class="info">
+                    <div class="rating">${movie.rating}</div>
+                    <span class="length">${movie.length}</span>
+                </div>
 
-                    <div class="Rating">${movie.rating}</div>
-                    <a>${movie.length}</a>
-                    <p>${movie.description}</p>
-                    
-                    <button class="trailer" href="${movie.trailer}">🎥 Watch Trailer</button>
-                </li>
-            </ul><br>
+                <p class="description">${movie.description}</p>
+                <a href="${movie.trailer}" target="_blank" class="trailer-btn">🎥 Watch Trailer</a>
+            </div>
+
+            <div class="movie-poster" style="background-image: url('${movie.poster}')">
+                <span class="type">${movie.type}</span>
+                <div class="date-overlay">
+                    <span class="date">${movie.date}</span>
+                </div>
+            </div>
         `;
 
         container.appendChild(movieCard);
     });
 }
 
-// Call fetchMovies on page load
+// INSTANTIATE MOVIES ON LOAD
 document.addEventListener("DOMContentLoaded", fetchMovies);
