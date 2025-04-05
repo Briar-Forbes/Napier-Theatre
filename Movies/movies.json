@@ -1,0 +1,40 @@
+[
+    {
+        "name":         "The Wild Robot",
+        "poster":       "Movies/Posters/The Wild Robot - Poster.jpg",
+        "trailer":      "https://www.youtube.com/watch?v=67vbA5ZJdKQ",
+        "rating":       "PG",
+        "length":       "1h 42m",
+        "description":  "The epic adventure follows the journey of a robot--ROZZUM unit 7134, \"Roz\" for short -- <br> that is shipwrecked on an uninhabited island and must learn to adapt to the harsh surroundings, <br> gradually building relationships with the animals on the island and becoming the adoptive parent of an orphaned gosling.",
+        "date":         "Sep 27th - Oct 4th",
+        "genre":        "Family | Adventure | Animation",
+
+        "type":         "Now Playing"
+    },
+
+    {
+        "name":         "Pokémon Detective Pikachu",
+        "poster":       "Movies/Posters/Detective Pikachu - Poster.jpg",
+        "trailer":      "https://www.youtube.com/watch?v=1roy4o4tqQM",
+        "rating":       "PG",
+        "length":       "1h 44m",
+        "description":  "Ace detective Harry Goodman goes mysteriously missing, prompting his 21-year-old son, Tim, to find out what happened. <br> Aiding in the investigation is Harry's former Pokémon partner, wise-cracking, adorable super-sleuth Detective Pikachu. <br> Finding that they are uniquely equipped to work together, as Tim is the only human who can talk with Pikachu, they join forces to unravel the tangled mystery.",
+        "date":         "May 10th - May 17th",
+        "genre":        "Family | Comedy | Adventure | Mystery",
+
+        "type":         "Next Attraction"
+    },
+
+    {
+        "name":         "Back to the Future",
+        "poster":       "Movies/Posters/Back to the Future - Poster.jpg",
+        "trailer":      "https://www.youtube.com/watch?v=qvsgGtivCgs",
+        "rating":       "PG",
+        "length":       "1h 56m",
+        "description":  "In this 1980s sci-fi classic, small-town California teen Marty McFly (Michael J. Fox) is thrown back into the '50s <br> when an experiment by his eccentric scientist friend Doc Brown (Christopher Lloyd) goes awry. Traveling through time in a modified DeLorean car, <br> Marty encounters young versions of his parents (Crispin Glover, Lea Thompson), and must make sure that they fall in love or he'll cease to exist. <br> Even more dauntingly, Marty has to return to his own time and save the life of Doc Brown.",
+        "date":         "Jul 3rd - Jul 10th",
+        "genre":        "Comedy | Sci-Fi",
+
+        "type":         "Coming Soon"
+    }
+]

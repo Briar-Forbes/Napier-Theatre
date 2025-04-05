@@ -1,0 +1,365 @@
+/* THIS IS A STYLESHEET SPECIFICALLY FOR ELEMENTS ON index.html */
+
+
+/* CASH NOTICE */
+    div.CashOnly
+    {
+        background: #d32f2f;
+        color: #ffffff;
+        box-shadow: 0 0 20px #000000;
+
+        border-radius: 20px;
+        border-width: 20px;
+
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+
+        opacity: 0;
+        animation: basic-fade-in .5s .35s forwards;
+    }
+
+/* TITLE */
+
+    h1.title
+    {
+        font-size: 100px;
+        text-align: center;
+        color: #ffffff;
+
+        opacity: 0;
+        animation: basic-fade-in .5s .45s forwards;
+    }
+
+    h3.title
+    {
+        font-size: 48px;
+        text-align: center;
+        transform: translateY(-90px);
+        color: #ff3b3b;
+
+        opacity: 0;
+        animation: still-fade-in .5s .65s forwards;
+    }
+    
+    @media (orientation: portrait){ .title
+    { display: none; }}
+
+/* SLIDESHOW */
+
+    .slideshow
+    {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        margin: auto;
+        position: relative;
+
+        box-shadow: 0 0 20px #000000;
+    }
+        @media (orientation: portrait){ .slideshow
+        { display: none; }}
+
+    .slides
+    {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 300%; /* This should be the number of slides * 100% */
+
+        cursor: pointer;
+    }
+
+    .slides img
+    {
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .dots
+    { 
+        text-align: center;
+        transform: translateY(-30px);
+    }
+        @media (orientation: portrait){ .dots
+        { display: none; }}
+
+    .dot
+    {
+        height: 12px;
+        width: 12px;
+        background: #3a3a3a;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+        box-shadow: 0 0 10px #000000;
+
+        transition: background .15s;
+    }
+        .dot:hover
+        { background: #ff3b3b;}
+
+    .active
+    { background: #ffffff; }
+
+/* MOVIES */
+
+    .movies-title
+    {
+        font-size: 100px;
+        text-align: center;
+        color: #ffffff;
+
+        opacity: 0;
+        animation: basic-fade-in .5s .45s forwards;
+    }
+
+    #movies-container
+    {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    #movies-container .movie-card
+    {
+        box-shadow: 0 0 10px #000000;
+        background: #1f1f1f;
+        
+        gap: 15px;
+        padding: 15px;
+        border-radius: 8px;
+        max-width: 100%;
+        align-items: center;
+        display: flex;
+
+        opacity: 0;
+        animation: still-fade-in .5s forwards;
+    }
+
+
+    #movies-container .movie-section
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    #movies-container .type
+    {
+        box-shadow: 0 0 10px #000000;
+        background: #1f1f1f;
+        color: white;
+        
+        position: absolute;
+        top: -30px;
+        padding: 5px 15px;
+        font-size: 16px;
+        border-radius: 5px;
+        text-align: center;
+
+        opacity: 0;
+        animation: type-pop-up .5s .6s forwards;
+    }
+        @keyframes type-pop-up
+        {
+            0% { opacity: 1; transform: translateY(20px);}
+            80% { transform: translateY(-3px);}
+            100% { opacity: 1; transform: translateY(0);}
+        }
+
+    #movies-container .movie-poster
+    {
+        width: 280px;
+        height: 450px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #000000;
+
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        opacity: 0;
+        animation: basic-fade-in .5s .35s forwards;
+    }
+        @media (orientation: landscape){ #movies-container .movie-poster
+        { width: 280px;
+          height: 450px; }}
+        @media (orientation: portrait){ #movies-container .movie-poster
+        { width: 140px;
+          height: 225px; }}
+
+    #movies-container .date-overlay
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: left;
+        padding: 5px 10px;
+        background: linear-gradient(to top, #00000070, transparent);
+    }
+        @media (orientation: portrait){ #movies-container .date-overlay
+        { align-items: center; text-align: center;}}
+
+    #movies-container .date
+    {
+        color: white;
+        text-shadow: 0 0 5px #00000070;
+    }
+        @media (orientation: landscape){ #movies-container .date
+        { font-size: 20px; }}
+        @media (orientation: portrait){ #movies-container .date
+        { font-size: 15px;}}
+
+    #movies-container .movie-details
+    {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #movies-container .genre
+    {
+        font-size: 14px;
+        color: #5a5a5a;
+
+        opacity: 0;
+        animation: basic-fade-in .5s .3s forwards;
+    }
+
+    #movies-container .title
+    {
+        font-size: 30px;
+        margin: 0;
+        color: #ffffff;
+
+        opacity: 0;
+        animation: basic-fade-in .5s .35s forwards;
+    }
+
+    #movies-container .info
+    {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    #movies-container .rating
+    {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #3a3a3a;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+
+        opacity: 0;
+        animation: basic-fade-in .5s .4s forwards;
+    }
+
+    #movies-container .length
+    {
+        font-size: 14px;
+        color: #5a5a5a;
+
+        opacity: 0;
+        animation: basic-fade-in .5s .45s forwards;
+    }
+
+    #movies-container .description
+    {
+        font-size: 14px;
+        color: #5a5a5a;
+        margin-bottom: 10px;
+
+        opacity: 0;
+        animation: basic-fade-in .5s .5s forwards;
+    }
+        @media (orientation: landscape){ #movies-container .description 
+        { display: auto; }}
+        @media (orientation: portrait){ #movies-container .description
+        { display: none; }}
+
+    #movies-container .trailer-btn
+    {
+        text-decoration: none;
+        background: #3a3a3a;
+        color: #ffffff;
+        padding: 8px 12px;
+        border-radius: 5px;
+        text-align: center;
+        width: fit-content;
+
+        box-shadow: 0 0 10px #00000050;
+        transition: background .15s, color .15s;
+
+        opacity: 0;
+        animation: basic-fade-in .5s .55s forwards;
+    }
+        #movies-container .trailer-btn:hover
+        {
+            background: #d32f2f;
+            color: #121212;
+        }
+
+/* WAIVER */
+    
+    .Waiver { text-align: center; }
+
+    .Waiver h1
+    { color: #ffffff; }
+
+    .Waiver a
+    { color: #5a5a5a; }
+
+    .Waiver .button
+    {
+        background-color: #5a5a5a;
+        color: #ffffff;
+        border-radius: 10px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        font-size: 20px;
+        text-decoration: none;
+
+        box-shadow: 0 0 10px #000000;
+        transition: background .15s, color .15s;
+
+        opacity: 0;
+        animation: basic-fade-in .5s .55s forwards;
+    }
+        .Waiver .button:hover
+        {
+            background-color: #d32f2f;
+            color: #121212;
+        }
+
+/* BASIC ANIMATIONS */
+
+    @keyframes basic-fade-in
+    {
+        from { opacity: 0; transform: translateY(10px);}
+        to { opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes still-fade-in
+    {
+        from { opacity: 0;}
+        to { opacity: 1;}
+    }
